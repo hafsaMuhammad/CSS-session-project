@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* start header */
+header {
+    background-image: url(../images/header-background.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/header-background.jpg); */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 700px;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 40px;
+}
+header nav .logo img {
+    width: 60%;
+}
+header nav ul {
+    list-style-type: none;
+    margin-right: 25px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 11px 10px 0;
+}
+header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+}
+header nav ul li:first-of-type a {
+    color: #14bf98;
+}
+header nav ul li:last-of-type a {
+    padding: 11px;
+    background-color: #14bf98;
+    border-radius: 5px;
+}
+header nav ul li a:hover {
+    color: #14bf98;
+}
+header nav ul li:last-of-type a:hover {
+    background-color: #FFF;
+    color:#14bf98 ;
+}
+header .header-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+header .header-details {
+    text-align: center;
+    
+}
+header .header-details h1 {
+    color: #FFF;
+    font-size: 60px;
+    padding: 20px 0;
+}
+header .header-details p {
+    color: #dfe5ec;
+    width: 73%;
+    margin: 0 auto 30px;
+
+} 
+header .header-details a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #14bf98;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    
+}
+header .header-details a:hover {
+    color: #14bf98;
+    background-color: #FFF;
+}
+
+/* end header */
+
+
+
+/* Start services */
+section {
+    background-color: #eaf6f6;
+    padding-bottom: 50px;
+}
+section .services {
+    text-align: center;
+    padding-top: 50px;
+}
+section .services p {
+    text-transform: uppercase;
+    color: #14bf98;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 30px 0 5px;
+}
+section .services h3 {
+    color: #333;
+    font-size: 30px;
+    width: 29%;
+    margin: 0 auto 40px;
+}
+section .services-details {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+section .services-details div {
+   
+    background-color: #FFF;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    width: 22%;
+    text-align: center;
+}
+section .services-details .service1, section .services-details .service2 {
+    margin-right: 50px;
+}
+section .services-details div img {
+    width: 100%;
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+}
+section .services-details div h4 {
+    color: #333;
+    font-size: 25px;
+    padding: 20px;
+}
+section .services-details div p {
+    color: #AAA;
+    font-size: 18px;
+    margin-bottom: 22px;
+    
+}
+section .services-details div ul {
+    list-style-position: inside;
+    list-style-type: square;
+    margin-bottom: 22px;
+    
+}
+section .services-details div ul li {
+    color: #14bf98;
+    
+}
+section .services-details div ul li span {
+    color: #AAA;
+    font-size: 18px;
+    font-weight: lighter;
+}
+section .services-details div p.price {
+    color: #333;
+}
+section .services-details div p.price span {
+    color: #14bf98;
+}
+section .services-details div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #14bf98;
+    padding: 14px 25px;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+section .services-details div a:hover {
+    color: #14bf98;
+    background-color: #FFF;
+    border:  2px solid #14bf98;
+}
+
+
+
+/* End services */
+
+
+/* Start team */
+.team {
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+}
+.team .team-header {
+    text-align: center;
+    margin: 40px 0 40px;
+}
+.team .team-header h3 {
+    color: #333;
+    font-size: 27px;
+    margin: 20px 0;
+}
+.team .team-header p {
+    width: 42%;
+    margin: 0 auto;
+    color: #818080;
+}
+.team .team-members {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.team .team-members div {
+    text-align: center;
+}
+.team .team-members div img {
+    transition: all 0.5s ease-in-out;
+}
+.team .team-members div img:hover {
+    /* transform: rotate(360deg); */
+    /* transform: translate(-5px , -10px); */   /*  if you give it one value, it will be for x, y will be zero */
+    /* transform: translate(10% , 5%); */
+    /* transform: skew(15deg, 30deg); as translate  */
+    transform: scale(1.1);
+}
+.team .team-members div p {
+    color: #818080;
+    padding: 10px 0;
+}
+.team .team-members div h5 {
+    color: #333;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+i {
+    padding: 10px;
+    background-color: #14bf98;
+    color: #FFF;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+i:hover {
+    background-color: #FFF;
+    color: #14bf98;
+}
+
+
+/* End Team */
